@@ -1,0 +1,22 @@
+{
+    "name": "fabric-server",
+    "version": "1.0.0",
+    "description": "fabric server on fastify with typescript",
+    "main": "dist/index.js",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "fastify": "^4.15.0"
+    },
+    "devDependencies": {
+        "@types/node": "^18.15.11",
+        "nodemon": "^2.0.22",
+        "typescript": "^5.0.4"
+    },
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "dev": "tsc -w & nodemon dist/index.js",
+        "start": "node server.js"
+    },
+    "author": "Alexey Gromov",
+    "license": "ISC"
+}
